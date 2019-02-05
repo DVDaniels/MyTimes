@@ -41,7 +41,7 @@ header nav{
 
 .content {
   display: flex;
-  width: 1300px;
+  width: auto;
   margin-top: 0px;
   margin-right: auto;
   margin-bottom: 78px;
