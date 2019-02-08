@@ -3,19 +3,6 @@
 
 /* Universal Styles */
 
-.image-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 300px;
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  text-align: center;
-  font-family: "Georgia";
-}
-
 body {
   margin-left: 0;
   font-family: "georgia" sans-serif;
@@ -40,11 +27,6 @@ nav span {
 }
 
 /* Universal Styles for the News Stories */
-.story {
-  display: flex;
-  flex-direction: column;
-}
-
 .stories {
   display: flex;
   justify-content: space-between;
@@ -55,8 +37,27 @@ nav span {
   height: 250px;
 }
 
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
 .narrative {
   margin-top: 16px;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  font-family: "Georgia";
 }
 
 /* Header */
