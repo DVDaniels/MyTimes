@@ -1,11 +1,8 @@
-@charset "UTF-8";
-/* CSS Document */
-
 /* Universal Styles */
 
 body {
-  margin-left: 0;
-  font-family: "georgia" sans-serif;
+  margin: 0;
+  font-family: "Georgia", serif;
   font-size: 17px;
   color: black;
 }
@@ -26,14 +23,15 @@ nav span {
   padding: 20px 10px;
 }
 
-/* Universal Styles for the News Stories */
+/* Universal Styles - News Stories */
+
 .stories {
   display: flex;
   justify-content: space-between;
   margin-top: 17px;
 }
 
-.stories.text-content {
+.stories .text-content {
   height: 250px;
 }
 
@@ -60,6 +58,7 @@ nav span {
 }
 
 /* Header */
+
 header {
   display: flex;
   align-items: center;
@@ -82,7 +81,7 @@ header {
 }
 
 .logo img {
-  width: 80px;
+  width: 70px;
   height: 60px;
   margin-right: 12px;
 }
@@ -94,6 +93,8 @@ header {
 header nav {
   padding-right: 40px;
 }
+
+/* Main Content Container */
 
 .content {
   display: flex;
@@ -108,37 +109,50 @@ header nav {
   margin-right: 32px;
 }
 
+/* First News Column */
+
 .column.large {
   width: 630px;
 }
 
 .lead-story .image-content {
-  background-image: url(resources/images/story-main.png);
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
   width: 630px;
   margin-top: 0;
-  font-size: 40px;
   text-align: left;
+  font-size: 40px;
+}
+
+.lead-story .image-content span {
+  margin-left: 20px;
 }
 
 .fall-cancelled.image-content {
-  background-image: url(resources/images/fall_season.png);
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
 }
 
 .pop-culture.image-content {
-  background-image: url(resources/images/hipster_cameraman.png);
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
 }
 
+/* Second News Column */
 
 .column.medium {
   width: 300px;
 }
 
 .cat-ceo.image-content {
-  background-image: url(resources/images/cat_ceo.png);
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
 }
+
+/* Third News Column */
 
 .column.small {
   width: 240px;
+}
+
+img.cookie {
+  height: 240px;
 }
 
 .news-bites h3 {
@@ -158,12 +172,17 @@ header nav {
   color: dimgray;
 }
 
+.bite span {
+  padding-left: 11px;
+}
+
 /* Footer */
 
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: 325px;
   background-color: mediumaquamarine;
@@ -176,7 +195,7 @@ footer .title {
   display: inline-block;
   padding-right: 25px;
   border-right: 2px solid white;
-  font-family: "georgia", serif;
+  font-family: "Georgia", serif;
   font-size: 16px;
   font-weight: bold;
   color: white;
